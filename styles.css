@@ -5,6 +5,8 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Molle:ital@1&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,7 +51,6 @@ table {
 	border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Molle:ital@1&display=swap');
 
 :root{
     --yellow:#F6D64A;
@@ -260,14 +261,14 @@ header::before{
     width: 100%;
     color: var(--black);
     font-weight:800;
-    font-size: clamp(1.05rem, 3,8vw, 1.4rem);
+    font-size: clamp(1.05rem, 3.8vw, 1.4rem);
     text-decoration: none;
   }
 
 
   #menu-toggle ul li a:hover{ 
-    background: color-mix(in srgb, var(--teal) 85%, #fff 15%);
-    text-decoration: none;
+    background-color: #6fd0e0; 
+  text-decoration: none;
    }
 
   #menu-toggle ul li a:focus-visible{
@@ -401,7 +402,8 @@ header::before{
   /* =================
      Testimonials
      ================= */
-  #testimonials{ display:grid; gap:var(--space-2); }
+  #testimonials{ display:grid; gap:var(--space-2); 
+}
   
   #testimonials h3{
     color: var(--black);
@@ -816,16 +818,17 @@ header::before{
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         column-gap: 1cm;                      
-        row-gap: .25rem;                     
+        row-gap: .25rem; 
+      }                    
       
       #testimonials > div > section{
         justify-self: stretch;               
-      
+      }
       
       #testimonials img{
         width: clamp(140px, 28vw, 200px);
         height: auto;
-      }   
+        
       }
     }
     #about{
@@ -888,7 +891,7 @@ header::before{
       footer{
         background: #EAEAEA;
       }
-}  
+  
 
 /* ============== DESKTOP LAYOUT (≥900px) ============== */
 @media (min-width: 900px){
